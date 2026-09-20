@@ -15942,6 +15942,7 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     system_ext_specific: true,
+    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -16005,6 +16006,7 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     system_ext_specific: true,
+    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -16099,6 +16101,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libgui",
+                "libgui_sm8850_shim",
                 "libui",
                 "libwfdcommonutils",
                 "libwfdconfigutils",
@@ -16142,6 +16145,7 @@ cc_prebuilt_library_shared {
                 "libandroid_runtime",
                 "libui",
                 "libinput",
+                "libinput_shim",
                 "libbinder",
                 "libgui",
                 "libnativehelper",
@@ -16243,6 +16247,7 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     system_ext_specific: true,
+    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -17258,35 +17263,6 @@ cc_prebuilt_library_shared {
                 "libdolbydecoderprocessor",
                 "libstagefright_foundation",
                 "libnativewindow",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsensorbridge",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libsensorbridge.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libbinder_ndk",
-                "libutils",
-                "android.frameworks.sensorservice-V1-ndk",
-                "android.hardware.sensors-V3-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -19213,6 +19189,7 @@ cc_prebuilt_binary {
     },
     prefer: true,
     relative_install_path: "hw",
+    check_elf_files: false,
     soc_specific: true,
 }
 
@@ -19253,6 +19230,7 @@ cc_prebuilt_binary {
     },
     prefer: true,
     relative_install_path: "hw",
+    check_elf_files: false,
     soc_specific: true,
 }
 
