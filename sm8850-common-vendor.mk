@@ -47,6 +47,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_5.6.0_enpuv6.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_5.6.0_enpuv6.pmd \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/acdbdata/wnr_models/wind_filter__1.0__48k__2ch__16b__eai_5.5.eai:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/wnr_models/wind_filter__1.0__48k__2ch__16b__eai_5.5.eai \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/android.hardware.security.onekeymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/android.hardware.security.onekeymint-service-qti.rc \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/aidl/le_audio/aidl_default_audio_set_configurations_qti.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_default_audio_set_configurations_qti.json \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/aidl/le_audio/aidl_default_audio_set_scenarios_qti.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_default_audio_set_scenarios_qti.json \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/aidl/le_audio/aidl_default_vendor_audio_set_scenarios_qti.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_default_vendor_audio_set_scenarios_qti.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/audio/sku_alor/plugin_manager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_alor/plugin_manager.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/audio/sku_alor/quasar_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_alor/quasar_config.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/audio/sku_canoe/plugin_manager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_canoe/plugin_manager.xml \
