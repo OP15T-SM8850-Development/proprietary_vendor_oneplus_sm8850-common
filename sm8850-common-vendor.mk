@@ -1662,3 +1662,6 @@ PRODUCT_PACKAGES += \
 endif
 PRODUCT_PACKAGES += \
     libsharebuffer_impl
+
+# Sensor bridge used by the fairlady camera libraries.
+PRODUCT_PACKAGES += libsensorbridge

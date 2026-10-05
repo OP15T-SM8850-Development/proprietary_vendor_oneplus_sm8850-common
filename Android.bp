@@ -30125,3 +30125,32 @@ filegroup {
         "proprietary/vendor/etc/qcril_database/upgrade/other/0016_version_update_ecc_table.sql",
     ],
 }
+
+cc_prebuilt_library_shared {
+    name: "libsensorbridge",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libsensorbridge.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libbinder_ndk",
+                "libutils",
+                "android.frameworks.sensorservice-V1-ndk",
+                "android.hardware.sensors-V3-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
